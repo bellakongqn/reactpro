@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {getWeather} from '../../server';
+import {getWeather} from '../../service';
 
 class Express extends Component {
     state={

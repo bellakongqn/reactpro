@@ -6,5 +6,5 @@ export function getWeather(){
 }
 
 export function setUser(version,cityid){
-     return Axios.get(`https://www.tianqiapi.com/api/?version=${username}&cityid=${password}`)
+     return Axios.get(`https://www.tianqiapi.com/api/?version=${version}&cityid=${cityid}`)
 }

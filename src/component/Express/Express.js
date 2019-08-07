@@ -7,12 +7,11 @@ class Express extends Component {
         error:'',
     }
 
-    handlebtn = () =>{
-        getWeather((value) =>{
-            this.setState({
-                data:value
-            })
-        })
+    handlebtn = async () =>{
+       const data = await getWeather()
+       this.setState({
+           data:data.data
+       })
     }
 
     render() {

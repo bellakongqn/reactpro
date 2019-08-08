@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {setUser} from '../../service'
-import { async } from 'q';
 
 class Input extends Component {
 

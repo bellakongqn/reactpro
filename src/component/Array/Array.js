@@ -16,18 +16,21 @@ class IndexPage extends Component {
     //   return false;
     // }
     changeState = () => {
-      let { arr } = this.state;
-      arr.push('2') 
-      var obj = {
-        name: "zl"
-      }
-      this.setState({
-        // obj
-        // obj:{name:"Z"}
-        arr // pureComponent下不会重新render
-        // arr: [...arr, '2']
-      })
-      console.log(this.state.arr)
+      // let { arr } = this.state;
+      // arr.push('2') 
+      // var obj = {
+      //   name: "zl"
+      // }
+      // this.setState({
+      //   // obj
+      //   // obj:{name:"Z"}
+      //   arr // pureComponent下不会重新render 
+      //   // arr: [...arr, '2']
+      // })
+      // console.log(this.state.arr)
+      this.setState(prevState => ({
+        arr: [...prevState.arr, 'bella'],
+       }));
     };
     render() {
       console.log('render');
@@ -36,9 +39,10 @@ class IndexPage extends Component {
         <div>
           <button onClick={this.changeState}>点击</button>
           <div>
-            {arr.map((item) => (
+            {/* {arr.map((item) => (
               <p>{item}</p>
-            ))}
+            ))} */}
+            {arr.join(',')}
             {obj.name}
           </div>
         </div>

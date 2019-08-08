@@ -4,6 +4,7 @@ import Input from '../src/component/Input/Input'
 import Component from '../src/component/Component/Component'
 import Array from '../src/component/Array/Array'
 import Parent from './Parentt'
+import WordAdder  from '../src/component/Array/Par'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Component />
       <Array />
       <Parent />
+      <WordAdder />
     </div>
   );
 }

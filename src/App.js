@@ -5,6 +5,7 @@ import Component from '../src/component/Component/Component'
 import Array from '../src/component/Array/Array'
 import Parent from './Parentt'
 import WordAdder  from '../src/component/Array/Par'
+import Immutable  from '../src/component/Immutable/Immutable '
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Array />
       <Parent />
       <WordAdder />
+      <Immutable />
     </div>
   );
 }

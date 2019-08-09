@@ -1,5 +1,6 @@
 import React from 'react';
 import ListOfWords from './New'
+import _ from 'lodash'
 export default class WordAdder extends React.Component {
     constructor(props) {
      super(props);
@@ -9,9 +10,16 @@ export default class WordAdder extends React.Component {
     }
     
     handleClick = ()  =>{
-        this.setState(prevState => ({
-         words: [...prevState.words, 'bella'],
-        }));
+        // this.setState(prevState => ({
+        //  words: [...prevState.words, 'bella'],
+        // }));
+
+        // this.setState({
+        //     words:[...this.state.words,'bella']
+        // })
+
+       let  words = _.concat(this.state.words,'bellalllllllll');
+       this.setState({words})
     };
 
     render() {

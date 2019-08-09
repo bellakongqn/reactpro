@@ -13,10 +13,13 @@ export default class IndexPage extends PureComponent{
     console.log('constructor');
   }
   changeState = () => {
-    let { person } = this.state;
-    person.name = 'sxt2';
-    this.setState({ 
-      person
+    // let { person } = this.state;
+    // person.name = 'sxt2';
+    // this.setState({ 
+    //   person
+    // })
+    this.setState({
+      person:{...this.state.person,name:'sxt2'}
     })
   };
   render() {

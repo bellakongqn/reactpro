@@ -6,17 +6,22 @@ import Array from '../src/component/Array/Array'
 import Parent from './Parentt'
 import WordAdder  from '../src/component/Array/Par'
 import Immutable  from '../src/component/Immutable/Immutable '
+import ImgUpload from '../src/component/ImgUpload/ImgUpload'
+import Upload from '../src/component/Upload/Upload'
 
 function App() {
   return (
     <div>
-      <Express />
+      {/* <Express />
       <Input />
       <Component />
       <Array />
       <Parent />
       <WordAdder />
-      <Immutable />
+      <Immutable /> */}
+      {/* <ImgUpload 
+        /> */}
+        <Upload />
     </div>
   );
 }

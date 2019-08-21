@@ -63,7 +63,6 @@ export default class Modal extends React.Component {
                     }
                    
                 </div>
-                <div className='mask' onClick={this.handleMask}>mask</div>
             </div>
             )
     }

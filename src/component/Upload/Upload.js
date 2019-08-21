@@ -82,8 +82,8 @@ class Upload extends React.PureComponent {
                     }   
                 </div>
                 <Modal visible={previewShow} title="图片详情" onClose={this.handleClose} onConfirm={this.handleConfirm} cancleText="确定" confirmText="取消" className="title">
-                        {/* <img  src={imgSrc} alt=""/> */}
-                        ewhvjg
+                        <img  src={imgSrc} alt=""/>
+                        {/* ewhvjg */}
                 </Modal>
             </div>
         )

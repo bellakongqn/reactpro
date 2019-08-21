@@ -8,6 +8,7 @@ import WordAdder  from '../src/component/Array/Par'
 import Immutable  from '../src/component/Immutable/Immutable '
 import ImgUpload from '../src/component/ImgUpload/ImgUpload'
 import Upload from '../src/component/Upload/Upload'
+import Modal from '../src/component/Modal/Modal'
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
       <Immutable /> */}
       {/* <ImgUpload 
         /> */}
-        <Upload />
+        
+          <Upload />
+        
+        
     </div>
   );
 }

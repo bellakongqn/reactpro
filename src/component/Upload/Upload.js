@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon } from 'antd';
+import Modal from '../Modal/Modal'
 import './Upload.css'
 
 // 文件上传
@@ -48,6 +49,18 @@ class Upload extends React.PureComponent {
           })
     }
 
+    handleConfirm=() =>{
+        this.setState({
+            previewShow:false
+        })
+    }
+
+    handleClose=() =>{
+        this.setState({
+            previewShow:false
+        })
+    }
+
 
     render() {
         const {imgFile, imgSrc,previewShow} = this.state
@@ -68,10 +81,10 @@ class Upload extends React.PureComponent {
                         )
                     }   
                 </div>
-               {previewShow && <img  src={imgSrc } className="previewImage" alt=""/>}      
-            
-            ewjrvegwu
-            
+                <Modal visible={previewShow} title="图片详情" onClose={this.handleClose} onConfirm={this.handleConfirm} cancleText="确定" confirmText="取消" className="title">
+                        {/* <img  src={imgSrc} alt=""/> */}
+                        ewhvjg
+                </Modal>
             </div>
         )
     }

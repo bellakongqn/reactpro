@@ -1,10 +1,10 @@
 import React from 'react';
-import Drag from '../src/component/DragAble/Drag'
+import Add from '../src/component/AsyncRedux/App'
 
 function App() {
   return (
     <div>
-        <Drag />
+        <Add />
     </div>
   );
 }
